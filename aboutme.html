@@ -8,8 +8,38 @@
 
 <h1 style="text-align:center;">Ying Kwong</h1>
  
-<button onclick="document.write('Likes and dislikes: Like exploring around seattle and photography, dislike people who walks slow. Fun Fact: I love all types of water sport but I will drown if you dump me into the water. Favorite Websites: Youtube. I spend all my hours online in youtube. My bio: My famil incules my mom, dad, two older sister, and me.')">About Me</button>
+<head>
+<style>
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: left;
+    background-color: lightblue;
+    margin-top:20px;
+}
+</style>
+</head>
+<body>
 
+<p>Click the "About Me!" button to toggle between hiding and showing the DIV element:</p>
+
+<button onclick="myFunction()">About Me!</button>
+
+<div id="myDIV">
+Likes and Dislikes:Like exploring around seattle and photography, dislike people who walks slow. Fun Fact: I love all types of water sport but I will drown if you dump me into the water. Favorite Websites: Youtube. I spend all my hours online in youtube. My bio: My famil incules my mom, dad, two older sister, and me.
+</div>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById('myDIV');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
  
  
  
